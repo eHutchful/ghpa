@@ -1,0 +1,477 @@
+﻿<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DB0BEF4E-F5F8-45ED-9EE2-FF614F861E49}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GhanaPilotsAssociation</RootNamespace>
+    <AssemblyName>GhanaPilotsAssociation</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\styles.min.css.map" />
+    <Content Include="fonts\font-awesome\fontawesome-webfont.eot" />
+    <Content Include="fonts\font-awesome\fontawesome-webfont.otf" />
+    <Content Include="fonts\font-awesome\fontawesome-webfont.ttf" />
+    <Content Include="fonts\font-awesome\fontawesome-webfont.woff" />
+    <Content Include="fonts\font-awesome\fontawesome-webfont.woff2" />
+    <Content Include="fonts\storytella\storytella.eot" />
+    <Content Include="fonts\storytella\storytella.ttf" />
+    <Content Include="fonts\storytella\storytella.woff" />
+    <Content Include="img\.DS_Store" />
+    <Content Include="Master.Master" />
+    <None Include="packages.config" />
+    <None Include="Properties\PublishProfiles\ghanapilotsassociation - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\ghanapilotsassociation - ReadOnly - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\ghanapilotsassociation - Web Deploy.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="about.html" />
+    <Content Include="contacts.html" />
+    <Content Include="css\styles.min.css" />
+    <Content Include="fonts\font-awesome\fontawesome-webfont.svg" />
+    <Content Include="fonts\storytella\storytella.svg" />
+    <Content Include="index.html" />
+    <Content Include="gallery.html" />
+    <Content Include="img\404.jpg" />
+    <Content Include="img\about-us-2.jpg" />
+    <Content Include="img\about-us.jpg" />
+    <Content Include="img\about.jpg" />
+    <Content Include="img\about_2.png" />
+    <Content Include="img\about_layout-reverse.png" />
+    <Content Include="img\about_layout.png" />
+    <Content Include="img\action-block_1.jpg" />
+    <Content Include="img\action-block_2.jpg" />
+    <Content Include="img\additional_1.jpg" />
+    <Content Include="img\additional_2.jpg" />
+    <Content Include="img\alerts.jpg" />
+    <Content Include="img\article.jpg" />
+    <Content Include="img\blog-post.jpg" />
+    <Content Include="img\blog.jpg" />
+    <Content Include="img\blog_1.jpg" />
+    <Content Include="img\blog_2.png" />
+    <Content Include="img\blog_3.png" />
+    <Content Include="img\blog_4.png" />
+    <Content Include="img\blog_5.jpg" />
+    <Content Include="img\blog_6.jpg" />
+    <Content Include="img\blog_7.jpg" />
+    <Content Include="img\blog_bg-2.png" />
+    <Content Include="img\blog_bg.png" />
+    <Content Include="img\bottom-bg.png" />
+    <Content Include="img\bottom-bg_2.png" />
+    <Content Include="img\causes.jpg" />
+    <Content Include="img\causes_1.jpg" />
+    <Content Include="img\causes_2.jpg" />
+    <Content Include="img\causes_3.jpg" />
+    <Content Include="img\causes_4.jpg" />
+    <Content Include="img\causes_5.jpg" />
+    <Content Include="img\causes_6.jpg" />
+    <Content Include="img\causes_img-2.png" />
+    <Content Include="img\causes_img.png" />
+    <Content Include="img\cause_details.jpg" />
+    <Content Include="img\comment_1.jpg" />
+    <Content Include="img\comment_2.jpg" />
+    <Content Include="img\comment_3.jpg" />
+    <Content Include="img\contacts.jpg" />
+    <Content Include="img\counter.jpg" />
+    <Content Include="img\counter_1.png" />
+    <Content Include="img\counter_2.png" />
+    <Content Include="img\counter_3.png" />
+    <Content Include="img\demos_img.png" />
+    <Content Include="img\donation-item_img.jpg" />
+    <Content Include="img\donation_img.png" />
+    <Content Include="img\donors.jpg" />
+    <Content Include="img\donors_inner.png" />
+    <Content Include="img\donor_1.png" />
+    <Content Include="img\donor_2.png" />
+    <Content Include="img\donor_3.png" />
+    <Content Include="img\donor_4.png" />
+    <Content Include="img\donor_5.png" />
+    <Content Include="img\donor_6.png" />
+    <Content Include="img\donor_7.png" />
+    <Content Include="img\donor_8.png" />
+    <Content Include="img\event-details.jpg" />
+    <Content Include="img\events.jpg" />
+    <Content Include="img\events_bg.png" />
+    <Content Include="img\events_inner-bg.png" />
+    <Content Include="img\event_1.jpg" />
+    <Content Include="img\event_2.jpg" />
+    <Content Include="img\event_3.jpg" />
+    <Content Include="img\event_4.jpg" />
+    <Content Include="img\event_5.jpg" />
+    <Content Include="img\event_6.jpg" />
+    <Content Include="img\event_7.jpg" />
+    <Content Include="img\event_8.jpg" />
+    <Content Include="img\event_9.jpg" />
+    <Content Include="img\face_1.jpg" />
+    <Content Include="img\face_2.jpg" />
+    <Content Include="img\face_3.jpg" />
+    <Content Include="img\face_4.jpg" />
+    <Content Include="img\face_5.jpg" />
+    <Content Include="img\face_6.jpg" />
+    <Content Include="img\feat_1.png" />
+    <Content Include="img\feat_2.png" />
+    <Content Include="img\feat_3.png" />
+    <Content Include="img\feat_4.png" />
+    <Content Include="img\front-3_promo-2.jpg" />
+    <Content Include="img\front-3_promo-3.jpg" />
+    <Content Include="img\front-3_promo.jpg" />
+    <Content Include="img\gallery_1.jpg" />
+    <Content Include="img\gallery_2.jpg" />
+    <Content Include="img\gallery_3.jpg" />
+    <Content Include="img\gallery_4.jpg" />
+    <Content Include="img\gallery_5.jpg" />
+    <Content Include="img\gallery_6.jpg" />
+    <Content Include="img\gallery_7.jpg" />
+    <Content Include="img\gallery_8.jpg" />
+    <Content Include="img\icon_1-1.png" />
+    <Content Include="img\icon_1.png" />
+    <Content Include="img\icon_2-2.png" />
+    <Content Include="img\icon_2.png" />
+    <Content Include="img\icon_3-3.png" />
+    <Content Include="img\icon_3.png" />
+    <Content Include="img\icon_4-4.png" />
+    <Content Include="img\icon_4.png" />
+    <Content Include="img\icon_5-5.png" />
+    <Content Include="img\icon_6-6.png" />
+    <Content Include="img\icon_7-7.png" />
+    <Content Include="img\icon_8-8.png" />
+    <Content Include="img\ig_1.jpg" />
+    <Content Include="img\ig_2.jpg" />
+    <Content Include="img\ig_3.jpg" />
+    <Content Include="img\ig_4.jpg" />
+    <Content Include="img\ig_5.jpg" />
+    <Content Include="img\ig_6.jpg" />
+    <Content Include="img\ig_7.jpg" />
+    <Content Include="img\ig_8.jpg" />
+    <Content Include="img\img_box-1.jpg" />
+    <Content Include="img\info-banner_img.png" />
+    <Content Include="img\info-banner_layout.png" />
+    <Content Include="img\info_img-layout.png" />
+    <Content Include="img\info_img.png" />
+    <Content Include="img\inner-pages.png" />
+    <Content Include="img\intro-footer.jpg" />
+    <Content Include="img\intro-footer.png" />
+    <Content Include="img\jules\1.jpg" />
+    <Content Include="img\jules\2.jpg" />
+    <Content Include="img\jules\3.jpg" />
+    <Content Include="img\jules\4.jpg" />
+    <Content Include="img\klarna.png" />
+    <Content Include="img\lion.jpg" />
+    <Content Include="img\marker.png" />
+    <Content Include="img\paypal.png" />
+    <Content Include="img\projects-slider_1.jpg" />
+    <Content Include="img\projects-slider_2.jpg" />
+    <Content Include="img\projects-slider_3.jpg" />
+    <Content Include="img\projects_1.jpg" />
+    <Content Include="img\projects_2.jpg" />
+    <Content Include="img\projects_3.jpg" />
+    <Content Include="img\projects_4.jpg" />
+    <Content Include="img\projects_5.jpg" />
+    <Content Include="img\projects_6.jpg" />
+    <Content Include="img\promo_1.jpg" />
+    <Content Include="img\promo_2.jpg" />
+    <Content Include="img\promo_3.jpg" />
+    <Content Include="img\recent_1.jpg" />
+    <Content Include="img\recent_2.jpg" />
+    <Content Include="img\recent_3.jpg" />
+    <Content Include="img\shop.jpg" />
+    <Content Include="img\shop_1.png" />
+    <Content Include="img\shop_2.png" />
+    <Content Include="img\shop_3.png" />
+    <Content Include="img\shop_4.png" />
+    <Content Include="img\shop_5.png" />
+    <Content Include="img\shop_6.png" />
+    <Content Include="img\shop_7.jpg" />
+    <Content Include="img\shop_8.jpg" />
+    <Content Include="img\shop_9.jpg" />
+    <Content Include="img\stories.jpg" />
+    <Content Include="img\storie_1-layout.png" />
+    <Content Include="img\storie_1.jpg" />
+    <Content Include="img\storie_2-layout.png" />
+    <Content Include="img\storie_2.jpg" />
+    <Content Include="img\storie_3-layout.png" />
+    <Content Include="img\storie_3.jpg" />
+    <Content Include="img\storie_4-layout.png" />
+    <Content Include="img\storie_4.jpg" />
+    <Content Include="img\storie_details-bg.png" />
+    <Content Include="img\storie_details-img.jpg" />
+    <Content Include="img\storie_details.jpg" />
+    <Content Include="img\svg\001-donate-2.svg" />
+    <Content Include="img\svg\002-donate-1.svg" />
+    <Content Include="img\svg\003-money-bag.svg" />
+    <Content Include="img\svg\004-donation-9.svg" />
+    <Content Include="img\svg\005-charity-4.svg" />
+    <Content Include="img\svg\006-woman.svg" />
+    <Content Include="img\svg\007-church.svg" />
+    <Content Include="img\svg\008-bible.svg" />
+    <Content Include="img\svg\009-loudspeaker.svg" />
+    <Content Include="img\svg\010-people.svg" />
+    <Content Include="img\svg\011-heart-box.svg" />
+    <Content Include="img\svg\012-balance.svg" />
+    <Content Include="img\svg\013-heart.svg" />
+    <Content Include="img\svg\014-donate.svg" />
+    <Content Include="img\svg\015-donation-8.svg" />
+    <Content Include="img\svg\016-blood.svg" />
+    <Content Include="img\svg\017-man.svg" />
+    <Content Include="img\svg\018-donation-7.svg" />
+    <Content Include="img\svg\019-donation-6.svg" />
+    <Content Include="img\svg\020-location.svg" />
+    <Content Include="img\svg\021-gift.svg" />
+    <Content Include="img\svg\022-donation-5.svg" />
+    <Content Include="img\svg\023-ecology.svg" />
+    <Content Include="img\svg\024-wheelchair.svg" />
+    <Content Include="img\svg\025-first-aid-kit.svg" />
+    <Content Include="img\svg\026-transfusion.svg" />
+    <Content Include="img\svg\027-solidarity-1.svg" />
+    <Content Include="img\svg\028-ribbon-2.svg" />
+    <Content Include="img\svg\029-balloon.svg" />
+    <Content Include="img\svg\030-donation-4.svg" />
+    <Content Include="img\svg\031-package.svg" />
+    <Content Include="img\svg\032-bread.svg" />
+    <Content Include="img\svg\033-donation-3.svg" />
+    <Content Include="img\svg\034-charity-3.svg" />
+    <Content Include="img\svg\035-donation-2.svg" />
+    <Content Include="img\svg\036-mail.svg" />
+    <Content Include="img\svg\037-money.svg" />
+    <Content Include="img\svg\038-shirt.svg" />
+    <Content Include="img\svg\039-charity-2.svg" />
+    <Content Include="img\svg\040-ribbon-1.svg" />
+    <Content Include="img\svg\041-house-1.svg" />
+    <Content Include="img\svg\042-house.svg" />
+    <Content Include="img\svg\043-donation-1.svg" />
+    <Content Include="img\svg\044-donation.svg" />
+    <Content Include="img\svg\045-charity-1.svg" />
+    <Content Include="img\svg\046-solidarity.svg" />
+    <Content Include="img\svg\047-world-grid.svg" />
+    <Content Include="img\svg\048-ribbon.svg" />
+    <Content Include="img\svg\049-smartphone.svg" />
+    <Content Include="img\svg\050-charity.svg" />
+    <Content Include="img\svg\1_basket.svg" />
+    <Content Include="img\svg\1_blood.svg" />
+    <Content Include="img\svg\1_charity.svg" />
+    <Content Include="img\svg\1_donate.svg" />
+    <Content Include="img\svg\1_earth.svg" />
+    <Content Include="img\svg\1_hand.svg" />
+    <Content Include="img\svg\1_hand_love.svg" />
+    <Content Include="img\svg\1_house.svg" />
+    <Content Include="img\svg\1_kids.svg" />
+    <Content Include="img\svg\1_love.svg" />
+    <Content Include="img\svg\1_money.svg" />
+    <Content Include="img\svg\1_money_hand.svg" />
+    <Content Include="img\svg\1_nature.svg" />
+    <Content Include="img\svg\1_people.svg" />
+    <Content Include="img\svg\1_t-shirt.svg" />
+    <Content Include="img\svg\1_tape.svg" />
+    <Content Include="img\svg\2_animal_shelter.svg" />
+    <Content Include="img\svg\2_beggar.svg" />
+    <Content Include="img\svg\2_charity.svg" />
+    <Content Include="img\svg\2_child.svg" />
+    <Content Include="img\svg\2_cooking.svg" />
+    <Content Include="img\svg\2_delivery.svg" />
+    <Content Include="img\svg\2_disabled.svg" />
+    <Content Include="img\svg\2_donate.svg" />
+    <Content Include="img\svg\2_homeless.svg" />
+    <Content Include="img\svg\2_love.svg" />
+    <Content Include="img\svg\2_money.svg" />
+    <Content Include="img\svg\2_money_hand.svg" />
+    <Content Include="img\svg\2_pc_donate.svg" />
+    <Content Include="img\svg\2_phone_donate.svg" />
+    <Content Include="img\svg\2_piggy_bank.svg" />
+    <Content Include="img\svg\2_receipt.svg" />
+    <Content Include="img\svg\3_blood.svg" />
+    <Content Include="img\svg\3_childs_hand.svg" />
+    <Content Include="img\svg\3_donate.svg" />
+    <Content Include="img\svg\3_donat_money.svg" />
+    <Content Include="img\svg\3_earth.svg" />
+    <Content Include="img\svg\3_food.svg" />
+    <Content Include="img\svg\3_hand.svg" />
+    <Content Include="img\svg\3_help.svg" />
+    <Content Include="img\svg\3_house.svg" />
+    <Content Include="img\svg\3_love.svg" />
+    <Content Include="img\svg\3_love_hand.svg" />
+    <Content Include="img\svg\3_money.svg" />
+    <Content Include="img\svg\3_piggy_bank.svg" />
+    <Content Include="img\svg\3_pram.svg" />
+    <Content Include="img\svg\3_present.svg" />
+    <Content Include="img\svg\3_tape.svg" />
+    <Content Include="img\svg\bag.svg" />
+    <Content Include="img\svg\blood.svg" />
+    <Content Include="img\svg\bootstrap.svg" />
+    <Content Include="img\svg\bread.svg" />
+    <Content Include="img\svg\charity.svg" />
+    <Content Include="img\svg\check.svg" />
+    <Content Include="img\svg\church.svg" />
+    <Content Include="img\svg\clock.svg" />
+    <Content Include="img\svg\close.svg" />
+    <Content Include="img\svg\donate-1.svg" />
+    <Content Include="img\svg\donation.svg" />
+    <Content Include="img\svg\envelope.svg" />
+    <Content Include="img\svg\gulp.svg" />
+    <Content Include="img\svg\jquery.svg" />
+    <Content Include="img\svg\logo.svg" />
+    <Content Include="img\svg\man.svg" />
+    <Content Include="img\svg\node.svg" />
+    <Content Include="img\svg\phone-call.svg" />
+    <Content Include="img\svg\placeholder.svg" />
+    <Content Include="img\svg\previous.svg" />
+    <Content Include="img\svg\question.svg" />
+    <Content Include="img\svg\remove.svg" />
+    <Content Include="img\svg\share.svg" />
+    <Content Include="img\svg\shirt.svg" />
+    <Content Include="img\svg\symbol\sprite.svg" />
+    <Content Include="img\svg\warning.svg" />
+    <Content Include="img\tabs.jpg" />
+    <Content Include="img\team_1.jpg" />
+    <Content Include="img\team_1.png" />
+    <Content Include="img\team_2.jpg" />
+    <Content Include="img\team_2.png" />
+    <Content Include="img\team_3.jpg" />
+    <Content Include="img\team_3.png" />
+    <Content Include="img\team_4.jpg" />
+    <Content Include="img\team_4.png" />
+    <Content Include="img\team_5.jpg" />
+    <Content Include="img\team_5.png" />
+    <Content Include="img\team_6.jpg" />
+    <Content Include="img\team_6.png" />
+    <Content Include="img\team_7.jpg" />
+    <Content Include="img\team_7.png" />
+    <Content Include="img\team_8.jpg" />
+    <Content Include="img\team_8.png" />
+    <Content Include="img\testimonials_2.jpg" />
+    <Content Include="img\text-section.png" />
+    <Content Include="img\text-section_2.png" />
+    <Content Include="img\text-section_left.png" />
+    <Content Include="img\text-section_right.png" />
+    <Content Include="img\typography.jpg" />
+    <Content Include="img\video_block-2.jpg" />
+    <Content Include="img\video_block-3.jpg" />
+    <Content Include="img\video_block.jpg" />
+    <Content Include="img\video_frame-2.jpg" />
+    <Content Include="img\video_frame-layout.png" />
+    <Content Include="img\video_frame.png" />
+    <Content Include="img\visa.png" />
+    <Content Include="img\volunteer-2.png" />
+    <Content Include="img\volunteer.jpg" />
+    <Content Include="_index.html" />
+    <Content Include="js\common.min.js" />
+    <Content Include="js\libs.min.js" />
+    <Content Include="stories.html" />
+    <Content Include="team-member.html" />
+    <Content Include="team.html" />
+    <Content Include="volunteer.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Master.Master.cs">
+      <DependentUpon>Master.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master.Master.designer.cs">
+      <DependentUpon>Master.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>38060</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:38060/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
