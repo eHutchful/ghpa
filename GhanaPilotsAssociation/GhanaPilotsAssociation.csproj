@@ -76,6 +76,14 @@
     <Content Include="fonts\storytella\storytella.ttf" />
     <Content Include="fonts\storytella\storytella.woff" />
     <Content Include="img\.DS_Store" />
+    <Content Include="img\375promo_1.jpg" />
+    <Content Include="img\375promo_2.jpg" />
+    <Content Include="img\375promo_3.jpg" />
+    <Content Include="img\834promo_1.jpg" />
+    <Content Include="img\834promo_2.jpg" />
+    <Content Include="img\834promo_3.jpg" />
+    <Content Include="img\logo_dark.png" />
+    <Content Include="img\logo_white.png" />
     <Content Include="Master.Master" />
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\ghanapilotsassociation - FTP.pubxml" />
