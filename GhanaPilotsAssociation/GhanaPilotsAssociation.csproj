@@ -82,6 +82,14 @@
     <Content Include="img\834promo_1.jpg" />
     <Content Include="img\834promo_2.jpg" />
     <Content Include="img\834promo_3.jpg" />
+    <Content Include="img\ig\gallery 1.png" />
+    <Content Include="img\ig\gallery 2.png" />
+    <Content Include="img\ig\gallery 3.png" />
+    <Content Include="img\ig\gallery 4.png" />
+    <Content Include="img\ig\gallery 5.png" />
+    <Content Include="img\ig\gallery 6.png" />
+    <Content Include="img\ig\gallery 7.png" />
+    <Content Include="img\ig\gallery 8.png" />
     <Content Include="img\logo_dark.png" />
     <Content Include="img\logo_white.png" />
     <Content Include="Master.Master" />
